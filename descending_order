@@ -1,0 +1,7 @@
+def descending_order(n)
+  string = n.to_s <!--changed numbers to strings to better manipulate -->
+  return string.split("").sort.reverse.join.to_i 
+  <!-- returned the string by sorting the split array and reversed the indices and joined them. 
+  Then I converted the string into an integer -->
+  
+end
