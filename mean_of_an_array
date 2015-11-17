@@ -1,0 +1,3 @@
+def get_average(marks) <!-- Pre established by the kata creator  -->
+  marks.inject(:+) / marks.length <!--Here I took the passed in array parameters and added all the indices together then divided by the length -->
+end <!-- Pre established by the kata creator  -->
