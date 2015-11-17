@@ -1,0 +1,6 @@
+def sillycase(silly)
+  array = silly.split("") <!--Took in array and split it-->
+  split = array.each_slice( (array.size / 2.0).round ).to_a <!--divided two halves and placed them in two separate arrays -->
+  return split[0].join.downcase + split[1].join.upcase 
+  <!-- returned the split components and apllied the separate methods to the 1st and second half respectively -->
+end
