@@ -1,0 +1,14 @@
+def isTriangleNumber(number) <!--Provided by Kata Creator -->
+re = /\d/ <!-- created digit regex variable -->
+if re.match(number.to_s) <!-- Used regex boolean to filter out non digit numbers and return false should a non-digit character pass -->
+  n = number <!-- I like working with n instead of number -->
+  equation = ((Math.sqrt((8 * n) + 1)) - 1) / 2 <!-- using the math sqrt method I found the mathematical equation that returns perfect triangles -->
+  if equation % 1 == 0 <!-- Here any number that would return with a remainder would be labeled as false and the rest true -->
+  return true
+  else
+  return false
+  end
+else
+return false
+end
+  end <!--Provided by Kata Creator -->
